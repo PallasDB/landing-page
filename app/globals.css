@@ -71,7 +71,7 @@ body {
   transform: translateY(var(--stagger-distance));
   filter: blur(var(--stagger-blur));
   transition:
-    opacity   var(--stagger-dur) var(--stagger-ease),
+    opacity   0ms var(--stagger-ease),
     transform var(--stagger-dur) var(--stagger-ease),
     filter    var(--stagger-dur) var(--stagger-ease);
   will-change: transform, opacity, filter;

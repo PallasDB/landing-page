@@ -145,11 +145,15 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3 text-sm font-mono uppercase tracking-[0.15em] text-white rounded-full
-                    bg-white/35 backdrop-blur-md border border-white/45
+                    backdrop-blur-md border border-white/45
                     shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]
-                    hover:bg-white/45 transition-[background-color,border-color,color,box-shadow] duration-200"
+                    hover:brightness-125 transition-[background-color,border-color,color,box-shadow,filter] duration-200"
+                  style={{ backgroundColor: 'rgb(32,35,40)' }}
                 >
                   View GitHub
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M2 9L9 2M9 2H3.5M9 2V7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </a>
               </div>
               <div className="t-avatar" onMouseEnter={() => setShifts(1, 'in')}>
@@ -163,6 +167,9 @@ export default function HeroSection() {
                     hover:bg-white/35 hover:text-white transition-[background-color,border-color,color,box-shadow] duration-200"
                 >
                   Read Docs
+                  <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M2 9L9 2M9 2H3.5M9 2V7.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
                 </a>
               </div>
             </div>
