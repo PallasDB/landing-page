@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
 export default function HeroSection() {
@@ -71,13 +72,18 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col min-h-screen">
         {/* Navbar */}
         <nav className="w-full max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
-          <Image
-            src="/pallasdb-icon-clean.svg"
-            alt="PallasDB"
-            width={64}
-            height={64}
-            priority
-          />
+          <span className="t-tt-wrap">
+            <Link href="/" className="t-tt-trigger" aria-describedby="tt-logo">
+              <Image
+                src="/pallasdb-icon-clean.svg"
+                alt="PallasDB"
+                width={64}
+                height={64}
+                priority
+              />
+            </Link>
+            <span className="t-tt" id="tt-logo" role="tooltip">PallasDB</span>
+          </span>
 
         </nav>
 
@@ -139,9 +145,9 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3 text-sm font-mono uppercase tracking-[0.15em] text-white rounded-full
-                    bg-white/15 backdrop-blur-md border border-white/25
-                    shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]
-                    hover:bg-white/25 transition-[background-color,border-color,color,box-shadow] duration-200"
+                    bg-white/35 backdrop-blur-md border border-white/45
+                    shadow-[inset_0_1px_0_rgba(255,255,255,0.25)]
+                    hover:bg-white/45 transition-[background-color,border-color,color,box-shadow] duration-200"
                 >
                   View GitHub
                 </a>
@@ -152,9 +158,9 @@ export default function HeroSection() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-8 py-3 text-sm font-mono uppercase tracking-[0.15em] text-white/80 rounded-full
-                    bg-white/5 backdrop-blur-md border border-white/15
-                    shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]
-                    hover:bg-white/12 hover:text-white transition-[background-color,border-color,color,box-shadow] duration-200"
+                    bg-white/20 backdrop-blur-md border border-white/35
+                    shadow-[inset_0_1px_0_rgba(255,255,255,0.15)]
+                    hover:bg-white/35 hover:text-white transition-[background-color,border-color,color,box-shadow] duration-200"
                 >
                   Read Docs
                 </a>
