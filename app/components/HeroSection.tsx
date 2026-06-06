@@ -45,7 +45,7 @@ export default function HeroSection() {
 
   return (
     <section
-      className="relative min-h-screen overflow-hidden"
+      className="relative h-dvh overflow-hidden"
       style={{
         backgroundImage: 'url(/background.png)',
         backgroundSize: 'cover',
@@ -69,7 +69,7 @@ export default function HeroSection() {
         }}
       />
 
-      <div className="relative z-10 flex flex-col min-h-screen">
+      <div className="relative z-10 flex flex-col h-full">
         {/* Navbar */}
         <nav className="w-full max-w-7xl mx-auto flex items-center justify-between px-8 py-6">
           <span className="t-tt-wrap">
